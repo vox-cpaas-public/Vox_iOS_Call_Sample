@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voxvalley Technologies Pte Ltd        " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12Y-fT-LV7">
+                    <rect key="frame" x="20" y="602" width="335" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="9FZ-ej-WUt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by Vox CPaaS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tE9-rD-M47">
+                    <rect key="frame" x="102" y="573" width="171" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="zoI-Fa-DO9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CallSample" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WS6-Ss-Z0F">
+                    <rect key="frame" x="109.5" y="314.5" width="156.5" height="38.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96081274750000001" green="0.96075576539999996" blue="0.96078592539999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="WS6-Ss-Z0F" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1qo-42-Iz6"/>
+                <constraint firstItem="tE9-rD-M47" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8QN-Hi-jA8"/>
+                <constraint firstAttribute="trailing" secondItem="12Y-fT-LV7" secondAttribute="trailing" constant="20" id="E7E-CU-SXa"/>
+                <constraint firstItem="WS6-Ss-Z0F" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cXU-jS-2Va"/>
+                <constraint firstItem="12Y-fT-LV7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="knP-Gq-8HL"/>
+                <constraint firstItem="12Y-fT-LV7" firstAttribute="top" secondItem="tE9-rD-M47" secondAttribute="bottom" constant="8" id="nOH-B8-yhC"/>
+                <constraint firstAttribute="bottom" secondItem="12Y-fT-LV7" secondAttribute="bottom" constant="20" id="pDk-q1-If8"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="484.5" y="303.5"/>
+        </view>
+    </objects>
+</document>

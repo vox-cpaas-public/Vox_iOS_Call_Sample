@@ -1,0 +1,10 @@
+platform :ios, '9.0'
+use_frameworks!
+
+target 'CallSample' do
+#  pod 'VoxSDK', '~> 1.0.35'
+  pod 'VoxSDK'
+  pod 'VoxWebRTC', '~> 1.0.3'
+  pod 'AWSCore', '~> 2.7.0'
+  pod 'AWSS3', '~> 2.7.0'
+end

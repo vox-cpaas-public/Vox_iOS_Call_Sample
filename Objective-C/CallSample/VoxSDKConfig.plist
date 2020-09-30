@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CSApplicationName</key>
+	<string>CallSample</string>
+	<key>CSApplicationKey</key>
+	<string></string>
+	<key>CSAccountAutoSignup</key>
+	<false/>
+	<key>CSAccountActivationCode</key>
+	<string>1234</string>
+	<key>CSContactPermissionPrompt</key>
+	<string>CSContactPermissionAutomatic</string>
+	<key>CSNativeContactsEnabled</key>
+	<true/>
+	<key>CSProductionEnvironment</key>
+	<true/>
+	<key>CSCloudConfiguration</key>
+	<dict>
+		<key>CSCloudAddress</key>
+		<string>52.26.193.237</string>
+		<key>CSCloudPort</key>
+		<string>8050</string>
+	</dict>
+	<key>CSFeaturesRequired</key>
+	<dict>
+		<key>CSFeatureAudioCalling</key>
+		<true/>
+		<key>CSFeatureVideoCalling</key>
+		<true/>
+		<key>CSFeatureChat</key>
+		<true/>
+		<key>CSFeatureGroupChat</key>
+		<true/>
+		<key>CSFeatureLiveStreaming</key>
+		<false/>
+		<key>CSFeaturePSTNCalling</key>
+		<true/>
+	</dict>
+</dict>
+</plist>

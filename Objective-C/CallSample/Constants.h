@@ -1,0 +1,298 @@
+//
+//  Constants.h
+//  ProjectV
+//
+//  Created by Kiran Vangara on 13/04/15.
+//  Copyright (c) 2015 Kiran Vangara. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+#ifndef ProjectV_Constants_h
+#define ProjectV_Constants_h
+
+extern NSString* const kARMessageType;
+
+extern NSString* const kARLoginId;
+extern NSString* const kARClientId;
+extern NSString* const kARTransactionId;
+extern NSString* const kARMessageCode; // TODO needed?
+extern NSString* const kAROSType;
+extern NSString* const kAROSVersion;
+
+extern NSString* const kARProfileName;
+extern NSString* const kARMailId;
+extern NSString* const kARPasswordHash;
+
+extern NSString* const kARActivationCode;
+
+extern NSString* const kARReturnCode;
+
+extern NSString* const kARCount;
+extern NSString* const kARPhoneNumbers;
+
+extern NSString* const kARUserName;
+extern NSString* const kARStatusMessage;
+extern NSString* const kARProfilePicture;
+
+extern NSString* const kARRemoteNumber;
+extern NSString* const kARMessageID;
+extern NSString* const kARSequenceNumber;
+extern NSString* const kARTimestamp;
+extern NSString* const kARChatType;
+extern NSString* const kARReportFlags;
+extern NSString* const kARChatMessage;
+extern NSString* const kARDeliveryStatus;
+
+
+extern NSString* const kARGroupName;
+extern NSString* const kARGroupDescription;
+
+extern NSString* const kARGroupID;
+extern NSString* const kARAdminNumbers;
+
+extern NSString* const kARChannelID;
+extern NSString* const kARChannelName;
+extern NSString* const kARChannelDescription;
+extern NSString* const kARChannelType;
+extern NSString* const kARLocation;
+extern NSString* const kARPictureUrl;
+extern NSString* const kARChannelRating;
+
+extern NSString* const kARPageSize;
+extern NSString* const kARPageOffset;
+extern NSString* const kARChannelCategory;
+extern NSString* const kARSearchString;
+extern NSString* const kARChannelPopularity;
+extern NSString* const kARNumberOfLikes;
+extern NSString* const kARAverageRating;
+
+extern NSString* const kARChannelInfo;
+
+// App Notifications
+
+extern NSString* const kANAppState;
+
+enum returnCodes {
+    E_200_OK = 1,
+    E_202_OK = 2,
+    E_401_UNAUTHORIZED = 3,
+    E_409_NOTALLOWED = 4,
+    E_500_INTERNALERR = 5,
+    E_204_RESENDACTIVATIONCODE = 6,
+    E_403_FORBIDDEN = 7
+};
+
+enum messageType {
+    E_MSG_TYPE_START = 0,
+    E_SIGNUP_RQT = 1,
+    E_SIGNUP_RSP = 2,
+    E_ACTIVATE_RQT = 3,
+    E_ACTIVATE_RSP = 4,
+    E_USER_JOINED_RQT = 5,
+    E_USER_JOINED_RSP = 6,
+    E_LOGIN_RQT = 7,
+    E_LOGIN_RSP = 8,
+    E_CHAT_RQT = 9,
+    E_CHAT_RSP = 10,
+    E_CHAT_DELIVERY_RQT = 11,
+    E_CHAT_DELIVERY_RSP = 12,
+    E_CHAT_READ_RQT = 13,
+    E_CHAT_READ_RSP = 14,
+    E_CALL_START_RQT = 15,
+    E_CALL_START_RSP = 16,
+    E_CALL_END_RQT = 17,
+    E_CALL_END_RSP = 18,
+    E_ADD_NUM_RQT = 19,
+    E_ADD_NUM_RSP = 20,
+    E_IS_APP_CONTACT_RQT = 21,
+    E_IS_APP_CONTACT_RSP = 22,
+    E_GET_CONTACTS_RQT = 23,
+    E_GET_CONTACTS_RSP = 24,
+    E_DELETE_NUM_RQT = 25,
+    E_DELETE_NUM_RSP = 26,
+    E_BLOCK_NUM_RQT = 27,
+    E_BLOCK_NUM_RSP = 28,
+    E_UNBLOCK_NUM_RQT = 29,
+    E_UNBLOCK_NUM_RSP = 30,
+    E_CREATE_GROUP_RQT = 31,
+    E_CREATE_GROUP_RSP = 32,
+    E_DELETE_GROUP_RQT = 33,
+    E_DELETE_GROUP_RSP = 34,
+    E_UPDATE_GROUP_INFO_RQT = 35,
+    E_UPDATE_GROUP_INFO_RSP = 36,
+    E_ADD_USERS_TO_GROUP_RQT = 37,
+    E_ADD_USERS_TO_GROUP_RSP = 38,
+    E_DEL_USERS_TO_GROUP_RQT = 39,
+    E_DEL_USERS_TO_GROUP_RSP = 40,
+    E_EXIT_FROM_GROUP_RQT = 41,
+    E_EXIT_FROM_GROUP_RSP = 42,
+    E_BLOCK_GROUP_RQT = 43,
+    E_BLOCK_GROUP_RSP = 44,
+    E_UNBLOCK_GROUP_RQT = 45,
+    E_UNBLOCK_GROUP_RSP = 46,
+    E_USER_ADDED_TO_GROUP_RQT = 47,
+    E_USER_ADDED_TO_GROUP_RSP = 48,
+    E_USER_DELETED_TO_GROUP_RQT = 49,
+    E_USER_DELETED_TO_GROUP_RSP = 50,
+    E_PULL_MY_GROUP_LIST_RQT = 51,
+    E_PULL_MY_GROUP_LIST_RSP = 52,
+    E_PULL_MY_GROUP_DETAILS_RQT = 53,
+    E_PULL_MY_GROUP_DETAILS_RSP = 54,
+    E_GROUP_CHAT_RQT = 55,
+    E_GROUP_CHAT_RSP = 56,
+    E_GROUP_CHAT_DELIVERY_RQT = 57,
+    E_GROUP_CHAT_DELIVERY_RSP = 58,
+    E_GROUP_CHAT_READ_RQT = 59,
+    E_GROUP_CHAT_READ_RSP = 60,
+    E_GET_PRESENCE_RQT = 61,
+    E_GET_PRESENCE_RSP = 62,
+    E_SET_PROFILE_RQT = 63,
+    E_SET_PROFILE_RSP = 64,
+    E_GET_PROFILE_RQT = 65,
+    E_GET_PROFILE_RSP = 66,
+    E_ADD_ADMINS_TO_GROUP_RQT = 67,
+    E_ADD_ADMINS_TO_GROUP_RSP = 68,
+    E_ADMIN_ADDED_TO_GROUP_RQT = 69,
+    E_ADMIN_ADDED_TO_GROUP_RSP = 70,
+    E_DEL_ADMINS_TO_GROUP_RQT = 71,
+    E_DEL_ADMINS_TO_GROUP_RSP = 72,
+    E_ADMIN_DELETED_TO_GROUP_RQT = 73,
+    E_ADMIN_DELETED_TO_GROUP_RSP = 74,
+    E_GROUP_DELETED_TO_GROUP_RQT = 75,
+    E_GROUP_DELETED_TO_GROUP_RSP = 76,
+    E_USER_EXITED_TO_GROUP_RQT = 77,
+    E_USER_EXITED_TO_GROUP_RSP = 78,
+    E_UPDATED_INFO_TO_GROUP_RQT = 79,
+    E_UPDATED_INFO_TO_GROUP_RSP = 80,
+    E_USER_PROFILE_CHANGED_RQT = 81,
+    E_USER_PROFILE_CHANGED_RSP = 82,
+    E_USER_PENDING_NOTIFICATIONS_RQT = 83,
+    E_USER_PENDING_NOTIFICATIONS_RSP = 84,
+    E_GET_MY_PENDING_NOTIFICATIONS_RQT = 85,
+    E_GET_MY_PENDING_NOTIFICATIONS_RSP = 86,
+    E_USER_STREAM_START_RQT = 87,
+    E_USER_STREAM_START_RSP = 88,
+    E_USER_STREAM_STOP_RQT = 89,
+    E_USER_STREAM_STOP_RSP = 90,
+    E_USER_STREAM_STOP_VIEWING_RQT = 91,
+    E_USER_STREAM_STOP_VIEWING_RSP = 92,
+    E_USER_STARTED_STREAM_RQT = 93,
+    E_USER_STARTED_STREAM_RSP = 94,
+    E_STREAM_ANSWER_SDP_TO_USER_RQT = 95,
+    E_STREAM_ANSWER_SDP_TO_USER_RSP = 96,
+    E_USER_STREAM_START_VIEWING_RQT = 97,
+    E_USER_STREAM_START_VIEWING_RSP = 98,
+    E_JOIN_STREAM_OFFER_SDP_TO_USER_RQT = 99,
+    E_JOIN_STREAM_OFFER_SDP_TO_USER_RSP = 100,
+    E_STREAM_VIEWING_USERS_RQT = 101,
+    E_STREAM_VIEWING_USERS_RSP = 102,
+    E_ADD_USERS_TO_STREAM_RQT = 103,
+    E_ADD_USERS_TO_STREAM_RSP = 104,
+    E_SHARE_STREAM_RQT = 105,
+    E_SHARE_STREAM_RSP = 106,
+    E_SEND_CHAT_IN_STREAM_RQT = 107,
+    E_SEND_CHAT_IN_STREAM_RSP = 108,
+    E_USER_SHARED_STREAM_RQT = 109,
+    E_USER_SHARED_STREAM_RSP = 110,
+    E_USER_CHANNEL_NAME_AVAILABILITY_RQT = 111,
+    E_USER_CHANNEL_NAME_AVAILABILITY_RSP = 112,
+    E_BROADCAST_CHANNEL_NAME_AVAILABILITY_RQT = 113,
+    E_BROADCAST_CHANNEL_NAME_AVAILABILITY_RSP = 114,
+    E_CREATE_USER_CHANNEL_RQT = 115,
+    E_CREATE_USER_CHANNEL_RSP = 116,
+    E_CREATE_BROADCAST_CHANNEL_RQT = 117,
+    E_CREATE_BROADCAST_CHANNEL_RSP = 118,
+    E_UPDATE_CHANNEL_INFO_RQT = 119,
+    E_UPDATE_CHANNEL_INFO_RSP = 120,
+    E_SHARE_CHANNEL_INFO_TO_FRIENDS_RQT = 121,
+    E_SHARE_CHANNEL_INFO_TO_FRIENDS_RSP = 122,
+    E_FRIEND_SHARED_CHANNEL_INFO_RQT = 123,
+    E_FRIEND_SHARED_CHANNEL_INFO_RSP = 124,
+    E_SUBSCRIBE_TO_CHANNEL_RQT = 125,
+    E_SUBSCRIBE_TO_CHANNEL_RSP = 126,
+    E_UNSUBSCRIBE_TO_CHANNEL_RQT = 127,
+    E_UNSUBSCRIBE_TO_CHANNEL_RSP = 128,
+    E_ADD_ADMINS_TO_CHANNEL_RQT = 129,
+    E_ADD_ADMINS_TO_CHANNEL_RSP = 130,
+    E_ADMINS_ADDED_TO_CHANNEL_RQT = 131,
+    E_ADMINS_ADDED_TO_CHANNEL_RSP = 132,
+    E_DEL_ADMINS_TO_CHANNEL_RQT = 133,
+    E_DEL_ADMINS_TO_CHANNEL_RSP = 134,
+    E_ADMINS_DELETED_TO_CHANNEL_RQT = 135,
+    E_ADMINS_DELETED_TO_CHANNEL_RSP = 136,
+    E_EXIT_ADMIN_FROM_CHANNEL_RQT = 137,
+    E_EXIT_ADMIN_FROM_CHANNEL_RSP = 138,
+    E_ADMIN_EXITED_FROM_CHANNEL_RQT = 139,
+    E_ADMIN_EXITED_FROM_CHANNEL_RSP = 140,
+    E_GET_CHANNEL_INFO_RQT = 141,
+    E_GET_CHANNEL_INFO_RSP = 142,
+    E_BLOCK_USER_TO_CHANNEL_RQT = 143,
+    E_BLOCK_USER_TO_CHANNEL_RSP = 144,
+    E_UNBLOCK_USER_TO_CHANNEL_RQT = 145,
+    E_UNBLOCK_USER_TO_CHANNEL_RSP = 146,
+    E_LIKE_CHANNEL_RQT = 147,
+    E_LIKE_CHANNEL_RSP = 148,
+    E_GIVE_RATING_TO_CHANNEL_RQT = 149,
+    E_GIVE_RATING_TO_CHANNEL_RSP = 150,
+    E_GET_RATING_DETAILS_OF_CHANNEL_RQT = 151,
+    E_GET_RATING_DETAILS_OF_CHANNEL_RSP = 152,
+    E_GET_RATING_COMMENTS_OF_CHANNEL_RQT = 153,
+    E_GET_RATING_COMMENTS_OF_CHANNEL_RSP = 154,
+    E_GET_MY_CHANNEL_NUMBER_OF_SUBSCRIBERS_RQT = 155,
+    E_GET_MY_CHANNEL_NUMBER_OF_SUBSCRIBERS_RSP = 156,
+    E_GET_MY_CHANNEL_SUBSCRIBERS_RQT = 157,
+    E_GET_MY_CHANNEL_SUBSCRIBERS_RSP = 158,
+    E_REPORT_CHANNEL_AS_SPAM_RQT = 159,
+    E_REPORT_CHANNEL_AS_SPAM_RSP = 160,
+    E_REPORT_CHANNEL_AS_ILLEGAL_RQT = 161,
+    E_REPORT_CHANNEL_AS_ILLEGAL_RSP = 162,
+    E_SEARCH_CHANNEL_RQT = 163,
+    E_SEARCH_CHANNEL_RSP = 164,
+    E_MEDIA_SERVER_LOGIN_RQT = 165,
+    E_MEDIA_SERVER_LOGIN_RSP = 166,
+    E_CREATE_ROOM_RQT = 167,
+    E_CREATE_ROOM_RSP = 168,
+    E_JOIN_ROOM_RQT = 169,
+    E_JOIN_ROOM_RSP = 170,
+    E_JOIN_ROOM_ANSWER_SDP_RQT = 171,
+    E_JOIN_ROOM_ANSWER_SDP_RSP = 172,
+    E_STREAM_START_VIEWING_STATUS_RQT = 173,
+    E_STREAM_START_VIEWING_STATUS_RSP = 174,
+    E_GET_STREAM_VIEWERS_COUNT_RQT = 175,
+    E_GET_STREAM_VIEWERS_COUNT_RSP = 176,
+    E_DETACH_ROOM_RQT = 177,
+    E_DETACH_ROOM_RSP = 178,
+    E_STREAM_STOP_VIEWING_STATUS_RQT = 179,
+    E_STREAM_STOP_VIEWING_STATUS_RSP = 180,
+    E_DESTROY_ROOM_RQT = 181,
+    E_DESTROY_ROOM_RSP = 182,
+    E_GET_CHANNEL_LIST_BY_TYPE_RQT = 183,
+    E_GET_CHANNEL_LIST_BY_TYPE_RSP = 184,
+    E_MSG_TYPE_END = 185
+};
+
+typedef enum eChannelType_t {
+    E_KIDS = 1,
+    E_ENTERTAINMENT = 2,
+    E_MOVIES = 3,
+    E_ALL_CHANNEL_TYPES = 4
+} eChannelType;
+
+typedef enum eAppState_t {
+    AS_NONE = 0,
+    AS_INIT,
+    AS_READY,
+    AS_CONNECTING,
+    AS_ACTIVE,
+    AS_INACTIVE
+} eAppState;
+
+typedef enum eConnectionState_t {
+    NS_NOT_REACHABLE = 0,
+    NS_CONNECTED,
+    NS_ERROR,
+    
+} eConnectionState;
+
+#endif
